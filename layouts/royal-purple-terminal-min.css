@@ -1,0 +1,377 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+.table-section,
+nav {
+  background-color: var(--box_color_and_seethru) !important
+}
+
+:root {
+  --headers: #7851A9;
+  --links: #A18FB7;
+  --text: #f4eaff;
+  --names: #543875;
+  --font-family: 'Fira Code VF', 'Courier New', monospace;
+  --mynamesize: 35px;
+  --transparency: 0.33;
+  --curve: 4px;
+  --border-color: #bca5d4;
+  --hue: 0deg;
+  --topic1: "general";
+  --topic2: "movies and tv";
+  --topic3: "music";
+  --topic4: "languages";
+  --topic5: "books";
+  --topic6: "miscellaneous";
+  --myactions: "contact me";
+  --mytopics: "my interests";
+  --mylinks: "my links";
+  --casing: lowercase;
+  --box_color_and_seethru: rgba(0, 0, 45, var(--transparency))
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  word-break: break-all !important
+}
+
+@supports (font-variation-settings:normal) {
+  code {
+    font-family: 'Fira Code VF', monospace
+  }
+}
+
+.url-info b,
+h3,
+h4,
+h5,
+nav label {
+  color: var(--headers) !important
+}
+
+.details p:last-child,
+.online,
+a {
+  color: var(--links) !important
+}
+
+.section,
+h2,
+p {
+  color: var(--text) !important
+}
+
+.count,
+.friends a p,
+.section h4,
+h1 {
+  color: var(--names) !important
+}
+
+.section,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+nav label,
+p {
+  font-family: var(--font-family) !important;
+  text-shadow: 2px 2px #000 !important;
+  text-transform: var(--casing) !important
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding-left: 1px !important
+}
+
+h1 {
+  font-size: var(--mynamesize) !important;
+  text-transform: none !important;
+  padding-left: 10px !important;
+  text-transform: var(--casing) !important
+}
+
+body {
+  background-image: var(--background_image) !important;
+  background-color: #000 !important
+}
+
+.blog-preview,
+.blurbs,
+.contact,
+.details,
+.friends,
+.heading,
+.mood,
+.table,
+.table-section,
+.url-info,
+footer {
+  background-color: var(--box_color_and_seethru) !important;
+  border-radius: var(--curve) !important;
+  padding: 8px !important;
+  border: var(--borders) !important
+}
+
+main,
+td {
+  background-color: rgba(0, 0, 0, 0) !important
+}
+
+.search-wrapper input[type=text],
+button {
+  background-color: rgba(0, 0, 0, .5) !important
+}
+
+#comments,
+.blog-preview,
+.blurbs,
+.contact,
+.friends,
+.mood,
+.table-section,
+footer {
+  backdrop-filter: blur(0.58px)
+}
+
+.table-section {
+  border: none !important;
+  border-radius: var(--curve) !important
+}
+
+.friends-grid img,
+.inner img,
+.profile-pic img,
+main,
+td {
+  border-radius: var(--curve) !important
+}
+
+.heading,
+nav ul {
+  background: 0 0 !important
+}
+
+.heading {
+  padding-bottom: 0 !important
+}
+
+.profile-pic img {
+  filter: hue-rotate(var(--hue)) drop-shadow(2px 2px black) !important
+}
+
+.friends-grid img {
+  outline: 0 !important;
+  filter: opacity(90%) !important;
+  width: 80% !important;
+  height: 80% !important;
+  filter: hue-rotate(var(--hue)) !important
+}
+
+.inner img {
+  outline: 0 !important;
+  filter: hue-rotate(var(--hue)) drop-shadow(1px 1px 2px midnightblue) !important
+}
+
+iframe {
+  border-radius: 60px !important;
+  opacity: .66 !important
+}
+
+nav {
+  border-radius: 0 0 var(--curve) var(--curve) !important
+}
+
+nav img {
+  filter: opacity(80%) !important
+}
+
+.blurbs .heading,
+.mood a img,
+.url-info,
+nav ul a img {
+  display: none !important
+}
+
+.top {
+  background: rgba(0, 0, 0, .8) !important
+}
+
+nav img.logo {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(13%) saturate(2151%) hue-rotate(224deg) brightness(100%) contrast(94%) !important
+}
+
+#comments,
+.blog-preview,
+.blurbs,
+.comments-table,
+.contact,
+.details,
+.friends,
+.friends td,
+.friends th,
+.icon,
+.mood,
+.profile-info,
+.profile-pic img,
+.table,
+.table-section,
+.url-info,
+main,
+th,
+tr {
+  border: 1px solid var(--border-color) !important;
+  outline: 0 !important
+}
+
+.icon {
+  border: none !important
+}
+
+.comments-table,
+.profile-info {
+  border-radius: var(--curve) !important
+}
+
+.mood {
+  margin-bottom: 10px !important
+}
+
+.blurbs {
+  margin-top: 10px !important
+}
+
+.friends {
+  margin-top: -10px !important
+}
+
+.comments-table {
+  border: none !important
+}
+
+.table-section {
+  padding-bottom: 7px !important
+}
+
+#comments {
+  margin-top: 15px !important;
+  padding-bottom: 15px !important
+}
+
+.details p:last-child {
+  filter: brightness(95%)
+}
+
+.contact,
+.f-col,
+.f-row {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important
+}
+
+.f-row {
+  margin-bottom: 3px !important;
+  padding-bottom: 0 !important;
+  padding-top: 2px !important;
+  margin-top: 0 !important
+}
+
+.f-col a {
+  margin-left: -2px !important
+}
+
+.contact {
+  padding-left: 2px !important;
+  padding-bottom: 12px !important
+}
+
+.search-wrapper input[type=text] {
+  border: 1px dotted var(--headers) !important;
+  color: var(--names) !important;
+  border-radius: 10px !important
+}
+
+button {
+  border-radius: 10px !important;
+  border: 1px dotted var(--headers) !important;
+  font-family: var(--font-family) !important;
+  color: var(--headers) !important
+}
+
+.table-section:not(:last-child) .details-table tr td:first-child p,
+.w-40 .contact .heading h4,
+.w-40 .table-section:last-child .heading h4,
+.w-40 .table-section:nth-last-child(2) .heading h4 {
+  color: transparent !important;
+  text-shadow: none !important;
+  letter-spacing: -100px
+}
+
+.w-40 .contact .heading::after,
+.w-40 .table-section:last-child .heading::after,
+.w-40 .table-section:nth-last-child(2) .heading::after {
+  font-family: var(--font-family) !important;
+  text-transform: var(--casing) !important;
+  color: var(--headers) !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important
+}
+
+.w-40 .table-section:last-child .heading::after {
+  content: var(--mylinks);
+  text-shadow: 2px 2px #000 !important
+}
+
+.w-40 .table-section:nth-last-child(2) .heading::after {
+  content: var(--mytopics);
+  text-shadow: 2px 2px #000 !important
+}
+
+.w-40 .contact .heading::after {
+  content: var(--myactions);
+  text-shadow: 2px 2px #000 !important
+}
+
+.details-table tr td:first-child p::after {
+  color: var(--links) !important;
+  letter-spacing: normal !important;
+  text-shadow: 2px 2px #000 !important;
+  filter: brightness(95%) !important
+}
+
+.table-section:not(:last-child) .details-table tr:first-child td:first-child p::after {
+  content: var(--topic1)
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(2) td:first-child p::after {
+  content: var(--topic2)
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(3) td:first-child p::after {
+  content: var(--topic3)
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(4) td:first-child p::after {
+  content: var(--topic4)
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(5) td:first-child p::after {
+  content: var(--topic5)
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(6) td:first-child p::after {
+  content: var(--topic6)
+}
+
+hr {
+  border: 1px dashed var(--names) !important;
+  filter: brightness(55%) !important
+}

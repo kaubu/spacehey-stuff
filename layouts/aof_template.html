@@ -1,0 +1,596 @@
+<!--
+  Link to this info + more tips/resources: https://blog.spacehey.com/entry?id=1254
+
+  copy and paste this to ur about me section
+-->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+  /* gotta fetch the font for phone users */
+
+  /*     the root below has the following things for you to play with: 
+
+        1. four colors to change.     
+                find colors at
+                https://www.w3schools.com/colors/colors_names.asp  
+                    or maybe pick a palette from https://colorhunt.co/      
+                           like for example #24a19c #6ebfb5 #ffc7c7 #ff5f40;      
+        2. the background image.  
+        3. the font. not a fan of comic sans? just delete the line, or replace
+           it with    
+                 --font-family: monospace;   or   --font-family:sans-serif;  
+                    or get one from https://fonts.google.com/ with the @import
+                    part also for above
+        4. the size of your name. on account of longer usernames might need a
+           smaller font   
+        5. the transparency of the boxes. any value between 0.0 (invisible) and
+               1.0 (opaque) works. 
+        6. the curve of the rounded corners. 0px makes them sharp
+        7. the colorisation of the faces. holmes has 90deg with teal results,
+           default is set at 0deg
+        8. a background color for the simplified variation of the theme
+        9. replaceable interest topics and headings for the left column */
+
+  :root {
+    --headers: #a31c59;
+    --links: indianred;
+    --text: darksalmon;
+    --names: mediumaquamarine;
+
+    --background_image: url("https://i.imgur.com/EnMApbN.jpeg");
+
+    --font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+
+    --mynamesize: 35px;
+
+    --transparency: 0.33;
+
+    --curve: 15px;
+
+    --hue: 0deg;
+
+    --simple_bg: #ffd2cb;
+
+    --topic1: "Generally";
+    --topic2: "Bands";
+    --topic3: "Tech";
+    --topic4: "Fandoms";
+    --topic5: "Scenes";
+    --topic6: "Writers";
+
+    --myactions: "no reason not to add me ";
+    --mytopics: "feeling all this rn ";
+    --mylinks: "follow me on these sites";
+  }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* this is the line between basic settings above, and the nitty gritty below
+  */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  /* ~~~~~ w h e r e  t h e  c o l o r s  e n d  u p ~~~~~ */
+  /* bit messy, this */
+
+  h3,
+  h4,
+  h5,
+  .url-info b {
+    color: var(--headers) !important;
+  }
+
+  /* headings*/
+  a {
+    color: var(--links) !important;
+  }
+
+  /* color of links */
+  p,
+  h2 {
+    color: var(--text) !important;
+  }
+
+  /* color of text */
+  h1,
+  .count,
+  .friends a p {
+    color: var(--names) !important;
+  }
+
+  /* color of names, and friends counter */
+  nav label {
+    color: var(--headers) !important;
+  }
+
+  /* color of search */
+  .section h4 {
+    color: var(--names) !important;
+  }
+
+  /* aboutme & want2meet headings */
+  .online {
+    color: var(--links) !important;
+  }
+
+  /* color of the 'online' text */
+  .section {
+    color: var(--text) !important;
+  }
+
+  /* sometimes <p> is broken by embeds maybe. */
+
+  /* ~~~~~ b o x  c o l o r ~~~~~ */
+  /* three numbers from 0-255: red, green, blue */
+  /* here they're all 0 for compatibility, but holmes is 0, 0, 45 */
+
+  :root {
+    --box_color_and_seethru: rgba(0, 0, 0, var(--transparency));
+  }
+
+  /* ~~~~~ f o n t  f a m i l y ~~~~~ */
+  /* you can disable the allcaps. wouldn't blame ya */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  a,
+  p,
+  nav label,
+  .section {
+    font-family: var(--font-family) !important;
+    text-shadow: 2px 2px black !important;
+    text-transform: uppercase !important;
+  }
+
+  /* ~~~~~ t h a t ' s  a  p a d d i n ' ~~~~~ */
+  /* on account of having round corners  */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    padding-left: 5px !important;
+  }
+
+  /* ~~~~~ s i z e  o f  y o u r  n a m e ~~~~~ */
+  /* you can also enable allcaps for it */
+  h1 {
+    font-size: var(--mynamesize) !important;
+    text-transform: none !important;
+    padding-left: 10px !important;
+  }
+
+  /* ~~~~~ t h e  b a c k g r o u n d  i m a g e  ~~~~~ */
+  /* change the image in the root, everything else here */
+  /* i could prolly put an easy way to make a fullscreen bg here. stay tuned */
+  body {
+    background-image: var(--background_image) !important;
+    background-color: black !important;
+    /* if you want your bg to stay fixed, use  */
+    /* background-attachment: fixed !important; */
+
+  }
+  /* here's some ideas (sfw, but you look at random images on the internet at
+    your own risk!!    duh!): https://i.imgur.com/EnMApbN.jpeg
+    https://i.imgur.com/Z6bCluL.jpeg https://i.imgur.com/hVhvMoS.jpg
+    https://i.imgur.com/1MWPDNB.png https://i.imgur.com/5JST8DK.png
+    https://i.imgur.com/HviCjeV.jpeg
+
+    this one's an xmas wallpaper dump https://imgur.com/gallery/HZGvN
+
+  */
+
+  /* ~~~~~  b o x e s ~~~~~ */
+  /* if you want your boxes to look different, go at it here. transparency is
+  tuned in the root*/
+
+  .heading,
+  .url-info,
+  .blurbs,
+  .details,
+  .mood,
+  .blog-preview,
+  .friends,
+  .contact,
+  .table,
+  .table-section,
+  footer {
+    background-color: var(--box_color_and_seethru) !important;
+    border-radius: var(--curve) !important;
+    padding: 8px !important;
+    border: var(--borders) !important;
+
+    /* there's a subtle-ish gradient effect on every box on holmes' page */
+    /* it's disabled here so the root transparency works right */
+    /* background-image: linear-gradient(330deg, rgba(90, 90, 90, 0.1),
+    rgba(60,60,60,0.1), rgba(100, 100, 100, 0.1)) !important; */
+  }
+
+  /* ~~~~~  b l u r  f o r  b o x e s ~~~~~ */
+  /* the boxes have a subtle blur effect on the background  */
+
+  #comments,
+  .blurbs,
+  .blog-preview,
+  .friends,
+  .mood,
+  .contact,
+  .table-section,
+  footer {
+    backdrop-filter: blur(0.58px);
+  }
+
+  /* ~~~~~ f i n e t u n i n g ~~~~~ */
+  /* table-section doesn't wanna play nice. needs work */
+  .table-section {
+    border: none !important;
+    background-color: var(--box_color_and_seethru) !important;
+    border-radius: var(--curve) !important;
+  }
+
+  .heading {
+    background: none !important;
+    padding-bottom: 0px !important;
+  }
+
+  /* ~~~~~ y o u r  f a c e ~~~~~ */
+  .profile-pic img {
+    /* the face rotation is funny, but let's comment it away for default */
+    /* transform: rotate(90deg) !important;  */
+    outline: none !important;
+    border-radius: var(--curve) !important;
+    filter: hue-rotate(var(--hue)) drop-shadow(2px 2px black) !important;
+  }
+
+  /* ~~~~~  f a c e s  o f  f r i e n d s  ~~~~~ */
+  .friends-grid img {
+    outline: none !important;
+    filter: opacity(90%) !important;
+    width: 80% !important;
+    height: 80% !important;
+    border-radius: var(--curve) !important;
+    filter: hue-rotate(var(--hue)) !important;
+
+  }
+
+  /* ~~~~~ f a c e s  i n  c o m m e n t s ~~~~~ */
+  .inner img {
+    outline: none !important;
+    filter: hue-rotate(var(--hue)) drop-shadow(1px 1px 2px midnightblue) !important;
+    border-radius: var(--curve) !important;
+  }
+
+  /* ~~~~~ e m b e d d i n g ~~~~~ */
+  /* this works for youtube well enough, dunno about the others. experiment!
+  try 100x100px soundcloud players c_c (opacity 1.0 is fully visible) */
+  iframe {
+    border-radius: 60px !important;
+    opacity: 0.66 !important;
+  }
+
+  /* ~~~~~ n a v  s t u f f ~~~~~  */
+  /* you know, the thing on top */
+  nav {
+    background-color: var(--box_color_and_seethru) !important;
+    border-radius: 0px 0px var(--curve) var(--curve) !important;
+  }
+
+  nav ul {
+    background: none !important;
+  }
+
+  nav img {
+    filter: opacity(80%) !important;
+  }
+
+  nav ul a img,
+  .mood a img {
+    display: none !important;
+  }
+
+  .top {
+    background: none !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+
+  /* ~~~~~ s p a c e h e y  l o g o ~~~~~ */
+  /* the color of the spacehey logo can be changed with the help of this
+  awesome tool */
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  /* you do indeed need the brightness 0 and saturate 100 at the start */
+  nav img.logo {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(30%) saturate(5652%) hue-rotate(312deg) brightness(90%) contrast(97%) !important;
+  }
+
+  /* ~~~~~ t h e  u r l - i n f o b o x  i s  h i d d e n  b y  d e f a u l t
+  ~~~~~ */
+  /* cause who needs it...? delete this line to reveal it */
+  .url-info {
+    display: none !important;
+  }
+
+  /* ~~~~~ t a b l e  o f  i n t e r e s t s ~~~~~ */
+  /* change 0.0 to 0.3 or higher to make the individual cells darker. looks
+  kinda cool */
+  td {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+    border-radius: var(--curve) !important;
+  }
+
+  /* ~~~~~ l e t  t h e r e  b e  r o u n d n e s s ~~~~~ */
+  /* curve is in the root */
+  main {
+    border-radius: var(--curve) !important;
+  }
+
+  /* ~~~~~ m i d d l e  s e c t i o n ~~~~~ */
+  /* change the last 0.0 to 0.3 to see what happens */
+  /* this is where you'd tweak the middle background what is white in a normal
+  page */
+  /* maybe have another background image here ?_? plenty of possibilities */
+  main {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+  }
+
+  /* ~~~~~ n o  b o r d e r s  a n y w h e r e ~~~~~ */
+  /* if you want borders, turn that 0px into 1px or more. might look cool with
+  opaque boxes */
+  /* if you wanna experiment with borders, you could make your own variable
+  too, idk */
+  /* plenty of styles to choose from
+  https://www.w3schools.com/css/css_border.asp */
+  .friends th,
+  tr,
+  .friends td,
+  th,
+  .icon,
+  #comments,
+  main,
+  .comments-table,
+  .friends,
+  .profile-info,
+  .table,
+  .table-section,
+  .contact,
+  .url-info,
+  .mood,
+  .blurbs,
+  .blog-preview,
+  .details,
+  .profile-pic img {
+    border: 0px dotted gray !important;
+    outline: none !important;
+  }
+
+  /* ~~~~~ e x c e p t i o n s  e t c . ~~~~~ */
+  .icon {
+    border: none !important;
+  }
+
+  .mood {
+    margin-bottom: 10px !important;
+  }
+
+  .blurbs {
+    margin-top: 10px !important;
+  }
+
+  .friends {
+    margin-top: -10px !important;
+  }
+
+  .profile-info {
+    border-radius: var(--curve) !important;
+  }
+
+  .comments-table {
+    border-radius: var(--curve) !important;
+    border: none !important;
+  }
+
+  .table-section {
+    padding-bottom: 7px !important;
+  }
+
+  #comments {
+    margin-top: 15px !important;
+    padding-bottom: 15px !important
+  }
+
+  .details p:last-child {
+    color: var(--links) !important;
+    filter: brightness(95%);
+  }
+
+  /* ~~~~~ n o o b  h a c k e r y ~~~~~ */
+  /* all this to keep the "forward to friend" from overflowing with comic sans.
+  wip */
+  .contact,
+  .f-row,
+  .f-col {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .contact {
+    padding-left: 2px !important;
+  }
+
+  .f-row {
+    margin-bottom: 3px !important;
+    padding-bottom: 0px !important;
+    padding-top: 2px !important;
+    margin-top: 0px !important;
+  }
+
+  .f-col a {
+    margin-left: -2px !important;
+    padding-left: -2px !important;
+  }
+
+  .contact {
+    padding-bottom: 12px !important;
+  }
+
+  /* ~~~~~ s e a r c h  b a r  ~~~~~ */
+  /* color the search bar using colors from root */
+  .search-wrapper input[type=text] {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px dotted var(--headers) !important;
+    color: var(--names) !important;
+    border-radius: 10px !important;
+  }
+
+  button {
+    border-radius: 10px !important;
+    border: 1px dotted var(--headers) !important;
+    font-family: var(--font-family) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: var(--headers) !important;
+  }
+
+  /* ~~~~~ a  q u i c k  f i x ~~~~~ */
+  /* fix for long strings within code-tags breaking comment tables */
+  code {
+    word-break: break-all !important;
+  }
+
+  /* ~~~~~ w e  w a n t  o u r  o w n  h e a d e r s ~~~~~ */
+  /* a real dumb hack, but quite effective. strings are in the root */
+  /* a roundabout way of deleting the headers is to have them be "" in the root
+  */
+  /* or maybe you could just have them be ascii characters like +´`+´`+´`+´`+
+  or smthng */
+  .w-40 .table-section:last-child .heading h4 {
+    color: transparent !important;
+    text-shadow: none !important;
+    letter-spacing: -100px;
+  }
+
+  .w-40 .table-section:last-child .heading::after {
+    content: var(--mylinks);
+    font-family: var(--font-family) !important;
+    text-shadow: 2px 2px black !important;
+    text-transform: uppercase !important;
+    color: var(--headers) !important;
+    font-weight: bold !important;
+  }
+
+  .w-40 .table-section:nth-last-child(2) .heading h4 {
+    color: transparent !important;
+    text-shadow: none !important;
+    letter-spacing: -100px;
+  }
+
+  .w-40 .table-section:nth-last-child(2) .heading::after {
+    content: var(--mytopics);
+    font-family: var(--font-family) !important;
+    text-shadow: 2px 2px black !important;
+    text-transform: uppercase !important;
+    color: var(--headers) !important;
+    font-weight: bold !important;
+  }
+
+  .w-40 .contact .heading h4 {
+    color: transparent !important;
+    text-shadow: none !important;
+    letter-spacing: -100px;
+  }
+
+  .w-40 .contact .heading::after {
+    content: var(--myactions);
+    font-family: var(--font-family) !important;
+    text-shadow: 2px 2px black !important;
+    text-transform: uppercase !important;
+    color: var(--headers) !important;
+    font-weight: bold !important;
+  }
+
+  /* ~~~~~ n o  b l u r b s  h e a d e r ~~~~~ */
+  /* this style doesn't need the blurbs header. idk who does */
+  .blurbs .heading {
+    display: none !important;
+  }
+
+  /* ~~~~~ p e r s o n a l i z e d  t o p i x ~~~~~ */
+  /* we're gonna make our own topics. change these in the root too */
+  /* same hack as above, though this is somehow even more fragile. might be
+  buggy */
+  .table-section:not(:last-child) .details-table tr td:first-child p {
+    color: transparent !important;
+    text-shadow: none !important;
+    letter-spacing: -100px;
+  }
+
+  .details-table tr td:first-child p::after {
+    color: var(--links) !important;
+    letter-spacing: normal !important;
+    text-shadow: 2px 2px black !important;
+    filter: brightness(95%) !important;
+  }
+
+  .table-section:not(:last-child) .details-table tr:nth-child(1) td:first-child p::after {
+    content: var(--topic1);
+  }
+
+  .table-section:not(:last-child) .details-table tr:nth-child(2) td:first-child p::after {
+    content: var(--topic2);
+  }
+
+  .table-section:not(:last-child) .details-table tr:nth-child(3) td:first-child p::after {
+    content: var(--topic3);
+  }
+
+  .table-section:not(:last-child) .details-table tr:nth-child(4) td:first-child p::after {
+    content: var(--topic4);
+  }
+
+  .table-section:not(:last-child) .details-table tr:nth-child(5) td:first-child p::after {
+    content: var(--topic5);
+  }
+
+  .table-section:not(:last-child) .details-table tr:nth-child(6) td:first-child p::after {
+    content: var(--topic6);
+  }
+
+  /* ~~~~~ h r  t a g ~~~~~ */
+  /* you can make these lines in your aboutme with the <hr> tag */
+  hr {
+    border: 1px dashed var(--names) !important;
+    filter: brightness(55%) !important;
+  }
+
+  /* ~~~~~  S I M P L I F I E D  v a r i a n t ~~~ move that line over this
+  line   */
+  /* move this entire line over that line to toggle the simplified variant
+  ON/OFF
+
+      .heading, .url-info, .blurbs, .details, .mood, .blog-preview, .friends, .contact, .table, .table-section, footer{
+        background-color:transparent !important;    background-image:none !important;
+  }
+  main, footer, nav{background-color:var(--simple_bg) !important;border-radius:
+    0px !important;} footer{margin:0px !important;border-radius:0px 0px
+    var(--curve) var(--curve) !important; } p, a, h1, h2, h3, h4, h5,
+    h6{text-shadow:none !important;} .details-table tr td:first-child
+    p::after{text-shadow:none !important}
+
+    .w-40 .contact .heading::after{text-shadow:none !important;} .w-40
+    .table-section:last-child .heading::after{text-shadow:none !important;}
+    .w-40 .table-section:nth-last-child(2) .heading::after{text-shadow:none
+    !important;} nav label{text-shadow:0px 0px white !important;}
+    button{background-color:transparent !important} .profile img, .friends-grid
+    img, .inner img{filter:none !important;} .search-wrapper input[type=text]
+    {background-color: transparent !important;}  
+    .url-info, #comments, .table, button, .search-wrapper
+    input[type=text]{border:2px dashed var(--text)
+    !important;background-color:rgba(120,120,120,0.014) !important}
+    */
+
+  /* that's all she wrote */
+  /* visit spacehey.com/meh */
+  /* here's hoping 2021 turns out better */
+</style>
