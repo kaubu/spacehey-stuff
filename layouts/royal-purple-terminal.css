@@ -15,7 +15,9 @@ Put this in HTML above <style>
 */
 
 /* Fetch the font for phone users */
-@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+/* @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css); */
+/* Use Google link for SpaceHey compatibility */
+@import url("https://fonts.googleapis.com/css?family=Fira Code");
 
 /*     the root below has the following things for you to play with: 
 
@@ -48,7 +50,7 @@ Put this in HTML above <style>
   --names: #543875;
   /* Deeper Royal Purple */
 
-  --font-family: 'Fira Code VF', 'Courier New', monospace;
+  --font-family: 'Fira Code VF', 'Fira Code', 'Courier New', monospace;
 
   --mynamesize: 35px;
 
